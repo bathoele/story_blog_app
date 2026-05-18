@@ -1,6 +1,9 @@
+import Publish from "./components/Publish"
 
 function App() {
-  return
+  return(
+    <Publish></Publish>
+  )
 }
 
 export default App
