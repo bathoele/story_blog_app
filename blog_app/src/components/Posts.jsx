@@ -6,7 +6,7 @@ function Posts() {
     const [error, setError] = useState(null);
     
     useEffect(() => {
-        axios.get('http://localhost:3000/api/posts')
+        axios.get('http://localhost:3001/api/posts')
             .then(res => {
                 setPosts(res.data);
             })

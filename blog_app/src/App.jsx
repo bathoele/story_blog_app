@@ -1,8 +1,9 @@
 import Publish from "./components/Publish"
+import Posts from "./components/Posts"
 
 function App() {
   return(
-    <Publish></Publish>
+    <Posts></Posts>
   )
 }
 

@@ -11,7 +11,7 @@ const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 app.use(cors());
 app.use(express.json());
 
-app.get('/api/users', async (req, res) => {
+app.get('/api/posts', async (req, res) => {
     try {
         const { rows } = await pool.query('SELECT * FROM lit');
         res.json(rows);
@@ -20,4 +20,4 @@ app.get('/api/users', async (req, res) => {
     }
 });
 
-app.listen(3000, () => console.log('Server running on port 3000'));
+app.listen(3001, () => console.log('Server running on port 3001'));
