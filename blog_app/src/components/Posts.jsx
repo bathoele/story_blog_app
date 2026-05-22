@@ -19,7 +19,7 @@ function Posts() {
 
     return (
         <ul>
-            {posts.map(post => <li key={post.id}>{post.title}</li>)}
+            {posts.map(post => <li key={post.id}>{post.title}{post.text}</li>)}
         </ul>
     );
 }
